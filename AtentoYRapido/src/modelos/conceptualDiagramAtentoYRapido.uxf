@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>120</y>
+      <w>216</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>ControlAtentoYRapido
+--
+--
+iniciarJuego()
+determinarEstadoJuego(boolean clicked)
+cambiarCuadro()
+nuevaRonda()
+validaAcierto()
+validaFallo()
+mostrarEstadisticas()
+finalizar()
+volverAJugar()
+iluminarCuadro()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>368</x>
+      <y>360</y>
+      <w>200</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>TableroImagenes
+--
+imagenesMostradas
+hayImagenRepetida: boolean
+posicionCuadroNuevo: int
+--
+nuevasImagenes(int numImagenes)
+cambioCuadro()
+boolean getHayImagenRepetida
+getImagenesMostradas
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>72</x>
+      <y>152</y>
+      <w>176</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>VistaGUIAtentoYRapido
+--
+botonIniciarJuego
+botonPulsador
+botonTerminar
+botonVolverAJugar
+--
+iniciarJuego()
+pulsar()
+mostrarEstadisticas()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>96</x>
+      <y>56</y>
+      <w>144</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>PrincipalAtentoYRapido
+--
+--
+main()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>456</x>
+      <y>288</y>
+      <w>32</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>152</x>
+      <y>88</y>
+      <w>24</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>184</y>
+      <w>136</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1</panel_attributes>
+    <additional_attributes>150.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
